@@ -1,0 +1,9 @@
+<label for="">From</label>
+<select name="" id="" [(ngModel)]="dataConvertir.from" (change)="ConvertirS()" style="margin: 0 5px">
+  <option *ngFor="let item of arrayCunrryValue; let indice = index" [value]="arrayCunrryKey[indice]">{{ item }}</option>
+</select>
+<label for="">To</label>
+<select name="" id="" [(ngModel)]="dataConvertir.to" (change)="ConvertirS()" style="margin: 0 5px">
+  <option *ngFor="let item of arrayCunrryValue; let indice = index" [value]="arrayCunrryKey[indice]">{{ item }}</option>
+</select>
+<label for="" style="margin: 0 5px">{{ resultado }}</label>
